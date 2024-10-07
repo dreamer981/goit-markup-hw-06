@@ -795,7 +795,7 @@ MODAL PENCERE */
 
 /*RESPONSİVE*/
 
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .body {
     width: 320px;
   }
@@ -883,9 +883,22 @@ MODAL PENCERE */
   .portfolio-list {
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    column-gap: 24px;
     align-items: center;
     justify-content: center;
+  }
+
+  .portfolio-card img {
+    width: 280px;
+  }
+
+  .fourth-section li {
+    width: 280px;
+    height: 353px;
+  }
+
+  .hidden {
+    width: 258px;
   }
 
   .footer-container {
