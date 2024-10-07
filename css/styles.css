@@ -333,7 +333,7 @@ img {
 
 .fourth-section li {
   list-style-type: none;
-  max-width: 360px;
+  width: 360px;
   height: 420px;
 }
 
@@ -864,11 +864,11 @@ MODAL PENCERE */
   }
 
   .second-section p {
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.02em;
-text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 
   .our-team {
@@ -878,7 +878,6 @@ text-align: left;
     align-items: center;
     justify-content: center;
   }
-
 
   .portfolio-list {
     display: flex;
