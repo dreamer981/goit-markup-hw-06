@@ -795,13 +795,14 @@ MODAL PENCERE */
 
 /*RESPONSİVE*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
   .body {
     width: 320px;
   }
   .container-header {
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .my-page-menu {
     display: block;
@@ -892,12 +893,21 @@ MODAL PENCERE */
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 72px;
+    text-align: center;
+  }
+
+  .footer-content {
+    text-align: left;
+  }
+
+  .socialmedia {
+    text-align: center;
   }
   .footer-form {
-    display: block;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .subscribe-modal {
@@ -909,5 +919,11 @@ MODAL PENCERE */
   .social-media {
     margin-left: 0px;
     text-align: center;
+  }
+  .subscribe-label {
+    text-align: center;
+  }
+  .subs-button {
+    margin-top: 16px;
   }
 }
