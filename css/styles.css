@@ -795,10 +795,7 @@ MODAL PENCERE */
 
 /*RESPONSİVE*/
 
-@media screen and (min-width: 320px) {
-  .body {
-    width: 320px;
-  }
+@media screen and (max-width: 320px) {
   .container-header {
     padding: 0;
     display: flex;
@@ -938,5 +935,126 @@ MODAL PENCERE */
   }
   .subs-button {
     margin-top: 16px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .container-header {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .page-menu-list {
+    display: flex;
+  }
+
+  .page-adress-list {
+    display: block;
+    margin-left: 120px;
+  }
+
+  .mail {
+    margin: 0 auto;
+  }
+
+  .effect-title {
+    padding-top: 72px;
+  }
+
+  .first-section {
+    width: 768px;
+    height: 432px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 0px;
+  }
+
+  .second-section {
+    padding-bottom: 0px;
+  }
+  .article-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 120px;
+    min-height: 316px;
+    width: 736px;
+  }
+
+  .article-list svg {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .title-content {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+
+  .second-section p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .our-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 736px;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 736px;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-card img {
+    width: 356px;
+  }
+
+  .fourth-section li {
+    width: 356px;
+    height: 416px;
+  }
+
+  .hidden {
+    width: 300px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width:540px;
+    gap: 60px;
+  }
+
+  
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-media {
+    margin: 0px;
+  }
+
+  .subscribe-modal {
+    margin: 0px;
   }
 }
