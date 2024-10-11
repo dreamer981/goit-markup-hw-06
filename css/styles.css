@@ -191,8 +191,7 @@ img {
 /*Second section */
 
 .second-section {
-  padding: 120px 0;
-  margin-bottom: 120px;
+  padding: 120px 0; 
 }
 
 .visually-hidden {
@@ -211,7 +210,7 @@ img {
 .article-content {
   display: flex;
   list-style-type: none;
-  height: 104px;
+  min-height: 104px;
   justify-content: center;
   gap: 24px;
 }
@@ -440,6 +439,7 @@ img {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  width: 100%;
 }
 .page-footer a {
   display: inline-block;
@@ -795,6 +795,150 @@ MODAL PENCERE */
 
 /*RESPONSİVE*/
 
+@media screen and (max-width: 320px) {
+  .container-header {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .my-page-menu {
+    display: block;
+  }
+  .page-logo-title {
+    margin: 0 auto;
+  }
+  .page-menu-list {
+    display: block;
+  }
+
+  .page-adress-list {
+    display: block;
+  }
+
+  .mail {
+    margin: 0 auto;
+  }
+
+  .effect-title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    max-width: 160px;
+    padding-top: 72px;
+  }
+
+  .first-section {
+    height: 432px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 0px;
+  }
+
+ 
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+  }
+
+  .article-content li {
+    width: 288px;
+  }
+
+  .article-list svg {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .title-content {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .second-section p {
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 288px;
+  }
+
+  .our-team {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-card img {
+    width: 280px;
+  }
+
+  .fourth-section li {
+    width: 280px;
+    height: 353px;
+  }
+
+  .hidden {
+    width: 258px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    text-align: center;
+    min-width: 288px;
+  }
+
+  .footer-content {
+    text-align: left;
+  }
+
+  .socialmedia {
+    text-align: center;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-modal {
+    margin-left: 0px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-media {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .subscribe-label {
+    text-align: center;
+  }
+  .subs-button {
+    margin-top: 16px;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .container-header {
     padding: 0;
@@ -834,18 +978,16 @@ MODAL PENCERE */
     padding: 0px;
   }
 
-  .second-section {
-    padding-bottom: 0px;
-  }
-
+ 
   .article-content {
     display: flex;
     flex-direction: column;
-    min-height: 696px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     gap: 72px;
+    align-items: center;
+  }
+
+  .article-content li {
+    width: 288px;
   }
 
   .article-list svg {
@@ -862,11 +1004,13 @@ MODAL PENCERE */
   }
 
   .second-section p {
+    text-overflow: ellipsis;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
+    width: 288px;
   }
 
   .our-team {
@@ -973,16 +1117,20 @@ MODAL PENCERE */
   }
 
   .second-section {
-    padding-bottom: 0px;
+    align-items: center;
+    margin-left: 0px;
   }
-
   .article-content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px;
+    align-items: center;
   }
 
-  
+.article-content li {
+  width: 356px;
+}
   .article-list svg {
     visibility: hidden;
     position: absolute;
@@ -1000,7 +1148,7 @@ MODAL PENCERE */
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
-    width: 356px;
+    width: 288px;
   }
 
   .our-team {
